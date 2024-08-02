@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Program Desa</title>
+    <style>
+        * {
+            font-family: verdana;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            --color1: #32373c;
+            --color2: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* navbar */
+
+        nav {
+            display: flex;
+            padding: 10px 0;
+            height: 90px;
+            position: fixed;
+            width: 100%;
+            background-color: var(--color1);
+            opacity: 99%;
+            top: 0px;
+        }
+
+        .logo img {
+            width: 150px;
+            margin: auto 10px;
+        }
+
+        .menu {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-around;
+
+        }
+
+        nav ul li {
+            padding: 0 20px;
+        }
+
+        .menu li a {
+            color: var(--color2);
+
+        }
+
+        .menu li a:hover {
+            color: #f64668;
+            border-bottom: 3px solid #f64668;
+            padding: 2px 0;
+        }
+
+        .submenu-profil {
+            display: none;
+            width: 23%;
+            left: 305px;
+            position: absolute;
+            background-color: var(--color1);
+            opacity: 99%;
+            text-align: left;
+        }
+
+        .submenu-profil li {
+            margin: 20px 0;
+        }
+
+        .submenu-layanan {
+            display: none;
+            width: 23%;
+            left: 600px;
+            position: absolute;
+            background-color: var(--color1);
+            text-align: left;
+        }
+
+        .submenu-layanan li {
+            margin: 20px 0;
+        }
+
+        #profil:hover .submenu-profil {
+            display: block;
+        }
+
+        #layanan:hover .submenu-layanan {
+            display: block;
+        }
+
+        .footer {
+            display: flex;
+            color: var(--color2);
+            background-color: var(--color1);
+            position: absolute;
+            left: 0;
+            bottom: -155px;
+            width: 100%;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        section {
+            padding-top: 50px;
+        }
+
+        .marque {
+            margin-top: 200px;
+            font-size: 100px;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+        <ul class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li id="profil"><a href="#">Profil <i class="fas fa-caret-down"></i></a>
+                <ul class="submenu-profil">
+                    <li><a href="./Sejarah.html">Sejarah</a></li>
+                    <li><a href="./visimisi.html">Visi Misi</a></li>
+                    <li><a href="./Bataswilayah.html">Letak Dan Luas Wilayah</a></li>
+                </ul>
+            </li>
+            <li><a href="./SOTK.html">Struktur</a></li>
+            <li id="layanan"><a href="#">Layanan <i class="fas fa-caret-down"></i></a>
+                <ul class="submenu-layanan">
+                    <li><a href="./kesehatan.html">Kesehatan</a></li>
+                    <li><a href="./LayananPendidikan.html">Pendidikan</a></li>
+                    <li><a href="./rumahibadah.html">Rumah Ibadat</a></li>
+                    <li><a href="./lain-lain.html">Lain-Lain</a></li>
+
+                </ul>
+            </li>
+            <li><a href="./tempatwisata.html">Tempat Wisata</a></li>
+            <li><a href="./programdesa.html">Program Desa</a></li>
+            <li><a href="./demografi.html">Demografi</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="marque">
+            <marquee behavior="" direction="" scrollamount="30">COMING SOON....</marquee>
+        </div>
+    </section>
+
+    <div class="footer">
+        Copyright @ kelompok 11
+        <!-- © 2024 Pemerintah Desa Kalamba. All rights reserved -->
+    </div>
+
+</body>
+
+</html>
